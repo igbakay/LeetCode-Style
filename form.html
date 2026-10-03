@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AltSchool Application Form</title>
+</head>
+<body>
+
+    <!-- Global Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home (First Assignment)</a></li>
+                <li><a href="form.html" aria-current="page">Application Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>AltSchool Africa Application Form</h1>
+            <p>Please fill out the form below to start your application process.</p>
+
+            <form action="#" method="post">
+                
+                <!-- Personal Information -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <p>
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="first_name" required autocomplete="given-name">
+                    </p>
+                    
+                    <p>
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last_name" required autocomplete="family-name">
+                    </p>
+                    
+                    <p>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                    </p>
+                    
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required autocomplete="tel">
+                    </p>
+                    
+                    <p>
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">-- Please select an option --</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="prefer-not-to-say">Prefer not to say</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <!-- Academic & Track Preferences -->
+                <fieldset>
+                    <legend>Program Preferences</legend>
+                    
+                    <p>
+                        <label for="school-track">Choose Your Learning School:</label>
+                        <select id="school-track" name="school_track" required>
+                            <option value="">-- Select a Track --</option>
+                            <option value="software-engineering">School of Software Engineering</option>
+                            <option value="product">School of Product (UI/UX, Product Management)</option>
+                            <option value="data">School of Data</option>
+                            <option value="business">School of Business</option>
+                        </select>
+                    </p>
+                    
+                    <p>
+                        <label for="country">Country of Residence:</label>
+                        <input type="text" id="country" name="country" required autocomplete="country-name">
+                    </p>
+                </fieldset>
+
+                <!-- Security / Account Creation -->
+                <fieldset>
+                    <legend>Account Security</legend>
+                    
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required minlength="8">
+                    </p>
+                    
+                    <p>
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm_password" required minlength="8">
+                    </p>
+                </fieldset>
+
+                <!-- Terms and Submission -->
+                <p>
+                    <input type="checkbox" id="terms" name="terms" value="accepted" required>
+                    <label for="terms">I agree to the AltSchool terms of service and privacy policy.</label>
+                </p>
+
+                <p>
+                    <button type="submit">Submit Application</button>
+                </p>
+
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer with Address and Copyright -->
+    <footer>
+        <hr>
+        <address>
+            AltSchool Africa Headquarters<br>
+            123 Tech Innovation Way, Victoria Island,<br>
+            Lagos, Nigeria.
+        </address>
+        <p>&copy; 2026 AltSchool Africa. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
